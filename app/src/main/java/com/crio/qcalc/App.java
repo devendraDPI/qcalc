@@ -29,5 +29,15 @@ public class App {
 
         calc.clearResult();
         calc.printResult();
+
+        ScientificCalculator sciCalc = new ScientificCalculator();
+        ScientificCalculator.getVersion();
+
+        System.out.println("squareOf: " + sciCalc.squareOf(5.0));
+        System.out.println("cubeOf: " + sciCalc.cubeOf(4.0));
+        System.out.println("powerOf: " + sciCalc.powerOf(2.0, 8.0));
+        System.out.println("squareRoot: " + sciCalc.squareRoot(625.0));
+        System.out.println("modulo: " + sciCalc.modulo(5, 2));
+        System.out.println("modulo double: " + sciCalc.modulo_double(5.0, 2.0));
     }
 }
