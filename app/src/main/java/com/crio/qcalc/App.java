@@ -5,10 +5,29 @@ package com.crio.qcalc;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Welcome to QCalc";
     }
 
     public static void main(String[] args) {
+        System.out.println("Starting QCalc...");
         System.out.println(new App().getGreeting());
+
+        StandardCalculator calc = new StandardCalculator();
+        StandardCalculator.getVersion();
+
+        calc.add(10, 2);
+        calc.printResult();
+
+        calc.subtract(10, 2);
+        calc.printResult();
+
+        calc.multiply(10, 2);
+        calc.printResult();
+
+        calc.divide(10, 2);
+        calc.printResult();
+
+        calc.clearResult();
+        calc.printResult();
     }
 }
